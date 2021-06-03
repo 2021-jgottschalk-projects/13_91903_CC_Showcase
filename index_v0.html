@@ -15,12 +15,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
     
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-
-    <link rel="stylesheet" href="css/layout.css"> 
-    <link rel="stylesheet" href="css/navigation.css" />  
+    <link rel="stylesheet" href="css/navigation.css"> 
+    <!-- <link rel="stylesheet" href="css/layout.css">  -->
     
-    <script src="js/j_query_min.js"></script>
+
     
 </head>
     
@@ -28,15 +26,13 @@
     
     <div class="wrapper">
     
-<div class="header">
+
         <!-- Navigation goes here.  Edit BOTH the file name and the link name -->
-        <div class="menu-header">
-            <i class="fa fa-bars"></i>
-            <div class="menu-content">
+
 
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a class="dropbtn" href="#">Gallery <i class="fa fa-chevron-down"></i></a>
+                <li><a href="#">Gallery</a>
                     <ul class="dropdown">
                         <li><a href="#">Insects</a></li>
                         <li><a href="#">Space</a></li>
@@ -44,27 +40,26 @@
                     </ul>
                 </li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">contact</a></li>
             </ul>
 
-            </div> <!-- / menu content-->
-
-            </div> <!-- / menu-header-->
-    </div>      <!-- / header-->
-
-    <div class="box main">
-        <h2>Creative Commons - The Mission!</h2>
+            <header>
+            
+            </header>     
         
+        <div class="box main">
+            <h2>Creative Commons - The Mission!</h2>
+            
+            <p>
+            Creative Commons gives content creators and consumers a way to share works without needing to grant permission for work to be used each time.
+        </p>
         <p>
-        Creative Commons gives content creators and consumers a way to share works without needing to grant permission for work to be used each time.
-    </p>
-    <p>
 The goal of creative commons is to "overcome legal obstacles to the sharing of knowledge and creativity to address the world’s pressing challenges".  You can learn more about Creative Commons <https://creativecommons.org/> at the preceding link.
 </p>
 
 <p>
 It is easy to <a href="https://creativecommons.org/share-your-work">share your work</a> by choosing a suitable license and then putting the license information on the work.  Standard abbreviations seen in CC licenses are...</p>
-<ul class="main">
+<ul>
 <li>SA (share alike)</li>
 <li>BY (attribution required)</li>
 <li>NC (non-commercial)</li>
@@ -77,34 +72,13 @@ Many government organisations and Schools in New Zealand are Creative Commons or
 <p>
 Please vist the links page to find sources of CC works and tools for correctly attributing these materials.
 </p>         
-    </div>    <!-- / main -->
+        </div>    <!-- / main -->
+        
+
+        <div class="box footer">
+            CC yourname 20XX
+        </div>    <!-- / footer -->
     
-
-    <div class="box footer">
-        CC yourname 20XX
-    </div>    <!-- / footer -->
-
-</div>  <!-- / wrapper  -->
-
-
-</div>  <!-- / wrapper-->
+    </div>  <!-- / wrapper  -->
     
-<!-- Add jquery to bottom of pages!! -->
-<script>
-    $('.dropbtn').click(function()
-        {
-            $('.dropdown').toggleClass('display');
-        }
-    )
-
-    // Make navigation button clickable
-
-    $('.fa-bars').click(function()
-    {
-        $('.menu-content').toggle();
-
-    })
-
-</script>
-
 </body>        

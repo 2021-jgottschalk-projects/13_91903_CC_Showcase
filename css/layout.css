@@ -1,6 +1,5 @@
 body {
     margin: auto;
-    padding: 50px;
     color: #000;
     font-family: 'Lato', sans-serif;
 }
@@ -13,8 +12,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "banner"
-        "nav"
+        "header"
         "main"
         "footer";
         grid-gap: 4px;
@@ -32,18 +30,6 @@ body {
     background-color: #ddd;
 }
 
-/* Area colouring... */
-
-/* logo, banner and footer background are the same */
-.logo, .banner, .footer {
-    background-color: #888;  /* dark grey */
-}
-
-/* Set font on dark areas to white */
-.logo, .banner, .side, .footer {
-    color: #fff;
-}
-
 /* Area specifics */
 
 .logo {
@@ -56,11 +42,11 @@ body {
     grid-area: banner;
 }
 
-.nav {
-    grid-area: nav;
-    background-color: #DDD;  /* silver */
-    font-size: 150%;
-    text-align: center;
+.header {
+    grid-area: header;
+    width: 100%;
+    height: auto;
+
 }
 
 .main {
@@ -79,6 +65,16 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;
+}
+
+/* style bullets in main part of page (separate to navigation) */
+
+ul.main {
+    list-style: disc;
+    display: list-item;
+    border: none;
+    margin-left: 20px;
+    /* background-color: white; */
 }
 
 /* Navigation Links */
@@ -117,23 +113,3 @@ a:hover{color: #000;}    /* Black*/
     color: #593849; /* purple */
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
