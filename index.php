@@ -16,9 +16,11 @@
     
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/simple-lightbox.css" />
 
     <link rel="stylesheet" href="css/layout.css"> 
     <link rel="stylesheet" href="css/navigation.css" />  
+    <link rel="stylesheet" href="css/gallery.css" />
     
     <!-- Link to JQuery -->
     <script src="js/j_query_min.js"></script>
@@ -44,14 +46,15 @@
             <div class="menu-content">
 
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a class="dropbtn" href="#">Gallery <i class="fa fa-chevron-down"></i></a>
                     <ul class="dropdown">
-                        <li><a href="#">Insects</a></li>
+                        <li><a href="index.php?page=insects">Insects</a></li>
                         <li><a href="#">Space</a></li>
                         <li><a href="#">People</a></li>
                     </ul>
                 </li>
+                <li><a href="#">Links</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -61,34 +64,22 @@
             </div> <!-- / menu-header-->
     </div>      <!-- / header-->
 
-    <div class="box main">
-        <h2>Creative Commons - The Mission!</h2>
-        
-        <p>
-            Creative Commons gives content creators and consumers a way to share works without needing to grant permission for work to be used each time.
-        </p>
-        <p>
-            The goal of creative commons is to "overcome legal obstacles to the sharing of knowledge and creativity to address the world’s pressing challenges".  You can learn more about <a href="https://creativecommons.org">Creative Commons</a> at the preceding link.
-        </p>
+    <!-- 'Main' div goes here -->
+    <?php
 
-        <p>
-            It is easy to <a href="https://creativecommons.org/share-your-work">share your work</a> by choosing a suitable license and then putting the license information on the work.  Standard abbreviations seen in CC licenses are...
-        </p>
+    // if no link has been pressed...
+    if(!isset($_REQUEST['page'])) {
+        include("home.php");
+    }
 
-        <ul class="main">
-            <li>SA (share alike)</li>
-            <li>BY (attribution required)</li>
-            <li>NC (non-commercial)</li>
-        </ul>
+    else {
+        // prevents users from navigating through file system
+        $page=preg_replace('/[^0-9a-zA-Z]-/','',$_REQUEST['page']);
+        include("$page.php");
 
-        <p>
-            Many government organisations and Schools in New Zealand are Creative Commons organisations.  This means that work created by employees will be CC licensed.
-        </p>
+    } // end of else to insert 'main' content
 
-        <p>
-            Please vist the links page to find sources of CC works and tools for correctly attributing these materials.
-        </p>         
-        </div>    <!-- / main -->
+    ?>
     
 
     <div class="box footer">
@@ -115,5 +106,14 @@
     })
 
 </script>
+<script src="js\simple-lightbox.min.js"></script>
+
+<script>
+    (function() {
+        var $gallery = new SimpleLightbox('.gallery a', {});
+    })();
+</script>
+
+
 
 </body>        

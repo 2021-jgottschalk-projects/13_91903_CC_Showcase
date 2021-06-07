@@ -2,21 +2,24 @@ body {
     margin: auto;
     color: #000;
     font-family: 'Lato', sans-serif;
-}
+    background-image: url(../images/03_desaturated_lightest.jpg);
+    }
 
 
 /* ---- Set up site grid ---- */
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100px 1fr 2fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-        grid-gap: 4px;
-    
+        "logo top-title header"
+        "main main main"
+        "footer footer footer";
+        grid-gap: 0;
+
+    padding: 0;
+    margin-bottom: 0;   
 }
 
 /* ---- End of grid setup ---- */
@@ -33,26 +36,33 @@ body {
 /* Area specifics */
 
 .logo {
+    grid-area: logo;
     padding: 0;
+    padding-left: 20px;
     float: left;
+    margin-bottom: 0;
     
 }
 
-.banner {
-    grid-area: banner;
+.top-title {
+    grid-area: top-title;
+    padding: 0px;
+    margin-bottom: 0;
 }
 
 .header {
     grid-area: header;
+    display: grid;
     width: 100%;
-    height: auto;
-
-}
+    align-items: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    }
 
 .main {
-    grid-area: main;
-    background-color: #EEE;  /* very pale grey */
-    border: solid 1px #CCC;
+    grid-area: main;  
+    background-color: rgba(255, 255, 255, .5); 
+    border: solid 1px #CCC;   
 }
 
 
@@ -67,9 +77,13 @@ h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.logo,  .top-title,  .header, .footer {
+    background-color: white;
+}
+
 /* style bullets in main part of page (separate to navigation) */
 
-ul.main {
+ul.text {
     list-style: disc;
     display: list-item;
     border: none;
@@ -77,17 +91,12 @@ ul.main {
     /* background-color: white; */
 }
 
-/* Navigation Links */
-.nav a {font-weight: bold;}
-.nav a:link, .nav a:visited {color: #AA0000;} /*dark red */
-.nav a:hover {color: #604830; text-decoration: none;} /* chocolate brown */
-
 
 /* links in page */
 a {font-weight: bold;}
-a:link{color: #AA0000;} /*dark_red */
-a:visited{color: #111177;} /* dark blue */
-a:hover{color: #000;}    /* Black*/
+a:link{color: #F9722A;} 
+a:visited{color: #444444;} 
+a:hover{color: #bc4f8c;}    
 
 
 /* Contact Form Styling */
@@ -112,4 +121,30 @@ a:hover{color: #000;}    /* Black*/
     font-family: 'Ubuntu', sans-serif;
     color: #593849; /* purple */
     font-weight: bold;
+}
+
+/* Responsive image rules */
+.responsive {
+    width: 100%;
+    height: auto
+}
+
+
+@media(max-width: 767px)
+{
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "logo top-title "
+            "header header"
+            "main main "
+            "footer footer";
+            grid-gap: 0;
+
+        
+    }
+
 }
