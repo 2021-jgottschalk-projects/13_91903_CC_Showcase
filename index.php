@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="css/layout.css"> 
     <link rel="stylesheet" href="css/navigation.css" />  
+    <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/gallery.css" />
     
     <!-- Link to JQuery -->
@@ -55,7 +56,7 @@
                     </ul>
                 </li>
                 <li><a href="index.php?page=links">Links</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.php?page=contact">Contact</a></li>
             </ul>
 
             </div> <!-- / menu content-->

@@ -100,7 +100,7 @@ ul.text {
 
 .single-spacing {
     padding: 0;
-    
+
 }
 
 /* links in page */
@@ -109,23 +109,6 @@ a:link{color: #F9722A;}
 a:visited{color: #444444;} 
 a:hover{color: #bc4f8c;}    
 
-
-/* Contact Form Styling */
-.contact {
-    width: 100%;
-}
-
-
-.img-circle {
-    border-radius: 50%;
-    max-width: 85%;
-    height: auto;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);     
-}
-
-.center_image {
-    text-align: center;
-}
 
 /* Sub Heading Formatting */
 .sub_heading {
