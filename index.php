@@ -1,5 +1,12 @@
 <!DOCTYPE HTML>
 
+<?php
+
+// function to allow easy insertion of gallery code
+include("functions.php");
+
+?>
+
 <html lang="en">
 
 <head>
