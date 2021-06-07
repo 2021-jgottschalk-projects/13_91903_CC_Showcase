@@ -1,4 +1,5 @@
     <div class="box main">
+        <div class="info-text">
         <h2>Creative Commons - The Mission!</h2>
         
         <p>
@@ -25,5 +26,6 @@
         <p>
             Please vist the links page to find sources of CC works and tools for correctly attributing these materials.
         </p>   
+        </div> <!-- / info-text -->
 
     </div>    <!-- / main -->

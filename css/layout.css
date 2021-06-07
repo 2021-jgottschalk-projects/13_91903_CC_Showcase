@@ -62,7 +62,7 @@ body {
 .main {
     grid-area: main;  
     background-color: rgba(255, 255, 255, .5); 
-    border: solid 1px #CCC;   
+    border: solid 1px #CCC;  
 }
 
 
@@ -81,6 +81,13 @@ h1, h2, h3, h4 {
     background-color: white;
 }
 
+/* Div to ensure that content on first page fill vertical space */
+.info-text
+{
+    display: flex;
+    flex-direction: column;
+}
+
 /* style bullets in main part of page (separate to navigation) */
 
 ul.text {
@@ -91,6 +98,10 @@ ul.text {
     /* background-color: white; */
 }
 
+.single-spacing {
+    padding: 0;
+    
+}
 
 /* links in page */
 a {font-weight: bold;}

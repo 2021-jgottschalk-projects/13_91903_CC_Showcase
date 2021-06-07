@@ -54,8 +54,7 @@
                         <li><a href="#">People</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Links</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.php?page=links">Links</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
 
