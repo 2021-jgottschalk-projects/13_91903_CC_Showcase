@@ -90,7 +90,7 @@ include("functions.php");
     
 
     <div class="box footer">
-        CC Miss Gottshalk 2022
+        CC Miss Gottshalk 2021
     </div>    <!-- / footer -->
 
 </div>  <!-- / wrapper  -->
