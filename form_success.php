@@ -1,17 +1,23 @@
- 
-    <div class="box main">
+<div class = "box main">
 
-        <h2>Thanks - Bonus Gallery!</h2>
+        <h2>Thanks!</h2>
 
-        <p>Thanks for getting in touch.  You should receive a response from us shortly.</p>
+    <p>
+        Thank You
+    </p>
 
-        <p>In the meantime, here is a bonus gallery...</p>
+    <p>
+        Your message has been received and we will be in touch in due course.
+    </p>
 
-        <!-- php to loop through images in directory -->
-        <?php
+    <?php
         make_gallery("bonus");
-        ?>
+    ?>
 
-       
 
-    </div>    <!-- / main -->
+    </div>  <!-- / main div -->
+
+
+
+
+    

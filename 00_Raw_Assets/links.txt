@@ -1,7 +1,4 @@
-<div class = "box main">
-    <div class="info-text">
-
-    <h2>Useful Links</h2>
+        <h2>Useful Links</h2>
         
         <p>
             Below are some links that you might find useful...
@@ -25,8 +22,3 @@
         </ul>
 
         <p>Have a great link that you think we should know about?  Please let us know!</p>
-
-
-    </div>  <!-- / info text div -->
-    </div>  <!-- / main div -->
-    
